@@ -1,5 +1,7 @@
 package com.projects.study.java;
 
+import com.projects.study.java.logger.Logger;
+
 import java.util.Scanner;
 
 public class Main {
@@ -17,7 +19,7 @@ public class Main {
         int q = sc.nextInt();
         switch (q) {
             case 1:
-                System.out.println("Правильно");
+                Logger.LogConsole("Правильно");
                 break;
             case 2:
                 System.out.println("Неправильна відповідь!\nВи програли!");
