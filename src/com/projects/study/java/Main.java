@@ -178,30 +178,7 @@ public class Main {
         if (q7 == 1) {
             System.out.println("Питання 5\n4 + 5 =\nВиберіть правильну відповідь\n\n1. 4\n2. 9\n3. 8\n4. 6");
         }
-        int q8 = sc.nextInt();
-        switch (q8) {
-            case 1:
-                System.out.println("Неправильна відповідь!\nВи програли!");
-                break;
-            case 2:
-                System.out.println("Правильно");
-                break;
-            case 3:
-                System.out.println("Неправильна відповідь!\nВи програли!");
-                break;
-            case 4:
-                System.out.println("Неправильна відповідь!\nВи програли!");
-                break;
-            default:
-                System.out.println("ERROR");
-        }
-        if (q8 != 2) {
-            return;
-        }
-        if (q8 == 2) {
-            System.out.println("Вітаю!\nВи пройшли гру!\nВаш виграш становить 1 000$");
-        }
-        return;
+
     }
 }
 
