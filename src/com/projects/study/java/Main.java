@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Вітаю Вас на грі 'Мільон'\nРозпочати гру?\n1. Так     2. Ні");
+        Logger.LogConsole("Вітаю Вас на грі 'Мільон'\nРозпочати гру?\n1. Так     2. Ні");
         int answer = sc.nextInt();
         if (answer == 1) {
             System.out.println("Нову гру почато...\n" +
@@ -16,35 +16,100 @@ public class Main {
                     "3) 1.2; 4) 7.4;");
             answer = sc.nextInt();
             if (answer == 1) {
-                System.out.println("Вітаю, ти виграв 100грн\n---Грати далі(1)/Забрати гроші(2)---");
+                System.out.println("Вітаю, ти виграв 100 грн\n---Грати далі(1)/Забрати гроші(2)---");
                 answer = sc.nextInt();
                 if (answer == 1) {
                     System.out.println("Питання 2. Скільки лап в здорового кота не інвалідa\n" +
                             "1) 8; 2) 16;\n" +
                             "3) 4; 4) 2;");
                     answer = sc.nextInt();
-                    if (answer == 3){
-                        System.out.println("Вітаю, ти виграв 200грн\n---Грати далі(1)/Забрати гроші(2)---");
+                    if (answer == 3) {
+                        System.out.println("Вітаю, ти виграв 200 грн\n---Грати далі(1)/Забрати гроші(2)---");
                         answer = sc.nextInt();
-                        if (answer == 1){
+                        if (answer == 1) {
                             System.out.println("Питання 3. ЗиЛ?\n" +
                                     "1) 5557; 2) 131;\n" +
                                     "3) Ikarus; 4) 2;");
                             answer = sc.nextInt();
-
+                            if (answer == 2) {
+                                System.out.println("Вітаю, ти виграв 300 грн\n---Грати далі(1)/Забрати гроші(2)---");
+                                answer = sc.nextInt();
+                                if (answer == 1) {
+                                    System.out.println("Запитання 4\n\n2 + 2 =\nВиберіть правильну відповідь\n\n1. 4\n2. 5\n3. 7\n4. 9");
+                                    answer = sc.nextInt();
+                                    if (answer == 1) {
+                                        System.out.println("Вітаю, ти виграв 400 грн\n---Грати далі(1)/Забрати гроші(2)---");
+                                        answer = sc.nextInt();
+                                        if (answer == 1) {
+                                            System.out.println("Питання 5\n\n2 + 3 =\nВиберіть правильну відповідь\n\n1. 10\n2. 5\n3. 7\n4. 3");
+                                            answer = sc.nextInt();
+                                            if (answer == 2) {
+                                                System.out.println("Вітаю, ти виграв 500 грн\n---Грати далі(1)/Забрати гроші(2)---");
+                                                answer = sc.nextInt();
+                                                if (answer == 1) {
+                                                    System.out.println("Питання 6\n\n3 + 3 =\nВиберіть правильну відповідь\n\n1. 4\n2. 5\n3. 7\n4. 6");
+                                                    answer = sc.nextInt();
+                                                    if (answer == 4) {
+                                                        System.out.println("Вітаю, ти виграв 600 грн\n---Грати далі(1)/Забрати гроші(2)---");
+                                                        answer = sc.nextInt();
+                                                        if (answer == 1) {
+                                                            System.out.println("Питання 7\n3 + 5 =\nВиберіть правильну відповідь\n\n1. 4\n2. 5\n3. 8\n4. 6");
+                                                            answer = sc.nextInt();
+                                                            if (answer == 3) {
+                                                                System.out.println("Вітаю, ти виграв 700 грн\n---Грати далі(1)/Забрати гроші(2)---");
+                                                                answer = sc.nextInt();
+                                                                if (answer == 1) {
+                                                                    System.out.println("Питання 8\n4 + 5 =\nВиберіть правильну відповідь\n\n1. 4\n2. 9\n3. 8\n4. 6");
+                                                                    answer = sc.nextInt();
+                                                                    if (answer == 2) {
+                                                                        System.out.println("Вітаю!\nВи пройшли гру!\nВаш виграш становить 1 000$");
+                                                                    } else {
+                                                                        System.out.println("Ваш виграш 0 грн. До зустрічі...");
+                                                                    }
+                                                                } else {
+                                                                    System.out.println("Ваш виграш 700 грн. До зустрічі...");
+                                                                }
+                                                            } else {
+                                                                System.out.println("Ваш виграш 0 грн. До зустрічі...");
+                                                            }
+                                                        } else {
+                                                            System.out.println("Ваш виграш 600 грн. До зустрічі...");
+                                                        }
+                                                    } else {
+                                                        System.out.println("Ваш виграш 0 грн. До зустрічі...");
+                                                    }
+                                                } else {
+                                                    System.out.println("Ваш виграш 500 грн. До зустрічі...");
+                                                }
+                                            } else {
+                                                System.out.println("Ваш виграш 0 грн. До зустрічі...");
+                                            }
+                                        } else {
+                                            System.out.println("Ваш виграш 400 грн. До зустрічі...");
+                                        }
+                                    } else {
+                                        System.out.println("Ваш виграш 0 грн. До зустрічі...");
+                                    }
+                                } else {
+                                    System.out.println("Ваш виграш 300 грн. До зустрічі...");
+                                }
+                            } else {
+                                System.out.print("Ваш виграш 0 грн. До зустрічі...");
+                            }
                         } else {
-                            System.out.println("Ваш виграш 200грн. До зустрічі...");
-
+                            System.out.println("Ваш виграш 200 грн. До зустрічі...");
                         }
                     } else {
-                        System.out.println("Ваш виграш 0грн. До зустрічі...");
+                        System.out.println("Ваш виграш 0 грн. До зустрічі...");
                     }
                 } else {
-                    System.out.println("Ваш виграш 100грн. До зустрічі...");
+                    System.out.println("Ваш виграш 100 грн. До зустрічі...");
                 }
             } else {
-                System.out.println("Ваш виграш 0грн. До зустрічі.");
+                System.out.println("Ваш виграш 0 грн. До зустрічі.");
             }
+        } else {
+            System.out.println("Допобачення");
         }
 
         /*if (answer == 2) {
@@ -198,5 +263,5 @@ public class Main {
             System.out.println("Вітаю!\nВи пройшли гру!\nВаш виграш становить 1 000$");
         }
         return;*/
-        }
+    }
 }
